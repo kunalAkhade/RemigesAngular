@@ -1,0 +1,16 @@
+<div class="calendar-container">
+  <h1>Calendar</h1>
+
+  <div class="form-group">
+    <label for="yearInput">Enter Year:</label>
+    <input id="yearInput" type="number" [(ngModel)]="year" placeholder="e.g., 2024" />
+  </div>
+
+  <button (click)="calculate()">Show</button>
+
+  <div class="results" *ngIf="numberOfDays">
+    <p><strong>Leap Year:</strong> {{ isLeapYear }}</p>
+    <p><strong>Number of Days:</strong> {{ numberOfDays }}</p>
+    <p><strong>Total Holidays:</strong> {{ totalHolidays }}</p>
+  </div>
+</div>

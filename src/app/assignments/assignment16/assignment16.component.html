@@ -1,0 +1,46 @@
+
+<div style="padding: 40px;">
+  <p>16. [ngModel, 2-way binding &amp; FormsModule, 6 hours]
+    Create a simple Angular project. Modify the “app” component to create a simple form for
+    2 input fields to accept numbers and 2 buttons named as &quot;Add&quot; and “Reset”. Clicking
+    on the “Add” button should display the result in the footer section as &quot;Sum of n1 and n2
+    is (n1+n2)&quot;.The form should be well designed and formatted.</p>
+
+<div class="main">
+    <div [formGroup]="formProfile" class="form">
+        <div class="input">
+            @let emptyN1 = formProfile.controls.n1.hasError('required') && formProfile.controls.n1.touched;
+            @let validN1 = formProfile.controls.n1.hasError('pattern') && formProfile.controls.n1.touched;
+            <label for="n1">First Number
+            </label>
+            <input [ngClass]="{'invalid': validN1 || emptyN1}" id="n1" name="n1" formControlName="n1"
+                autocomplete="off">
+            <div class="error"><span *ngIf="validN1">First Number should
+                    be a whole number</span><span *ngIf="emptyN1">First Number cannot
+                    be empty</span>
+            </div>
+
+
+            @let emptyN2 = formProfile.controls.n2.hasError('required') && formProfile.controls.n2.touched;
+            @let validN2 = formProfile.controls.n2.hasError('pattern') && formProfile.controls.n2.touched;
+            <label for="n2">Second Number
+            </label>
+            <input [ngClass]="{'invalid': validN2 || emptyN2}" id="n2" name="n2" formControlName="n2"
+                autocomplete="off">
+            <div class="error"><span *ngIf="validN2">Second Number should
+                    be a whole number</span><span *ngIf="emptyN2">Second Number cannot
+                    be empty</span>
+            </div>
+        </div>
+        <div class="success"><span *ngIf="submitted && formProfile.untouched">Sum of {{num1}} and {{num2}} is {{num1 +
+                num2}}</span>
+        </div>
+        <div class="buttons">
+            <button class="reset" (click)="handleReset()"><strong>Reset</strong></button>
+            <button class="register" [disabled]="formProfile.invalid"
+                (click)="handleAdd()"><strong>Add</strong></button>
+        </div>
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,25 @@
+<div style="padding: 40px;">
+
+
+  <p>20. [&#64;Output decorator &amp; EventEmitter, 4 hours]
+    Extend the above app to send data back to the parent component. Create a button in the
+    “child” component as “Rate the book”. When the button is clicked a random number
+    between 1-10 would be generated and passed (emitted) back to the parent. The parent
+    component will show an alert message like “Rating for &lt;title&gt; is 7“.</p>
+
+  <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ successMessage }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="successMessage = ''">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="book-container">
+    <div *ngFor="let book of listOfBooks; index as i">
+      <app-book-template2 [title]="book.title" [description]="book.description" [price]="book.price"
+        (rateEvent)="rateBook($event)"></app-book-template2>
+    </div>
+  </div>
+
+
+</div>

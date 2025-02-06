@@ -1,0 +1,17 @@
+.sidebar-main{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.sidebar-main div{
+  border-bottom: 1px solid grey ;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

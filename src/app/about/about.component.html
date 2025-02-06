@@ -1,0 +1,22 @@
+<div class="img-container">
+    @if(isVisible){
+        <img class="profile-img" [src]="image" [alt]="altComment"/>
+
+    }
+
+    <h1 class="bungee-spice-regular">Hello World,</h1>
+    <div class="intro">
+        <p class="cedarville-cursive-regular" >{{greetings}} ! </p>
+        <p class="cedarville-cursive-regular" >I am {{username}} </p>
+    </div>
+    <button class="button-23" role="button" (click)="reveal()">
+        @if(isVisible){
+            Hide Face
+        }
+        @else{
+            Reveal Face
+        }
+
+    </button>
+
+</div>

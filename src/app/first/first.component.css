@@ -1,0 +1,14 @@
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-size: 30px;
+  font-family: sans-serif;
+  gap: 5px;
+
+}
+
+span{
+  color: #004399;
+}

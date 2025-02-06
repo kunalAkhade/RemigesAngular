@@ -1,0 +1,19 @@
+
+
+<div style="padding: 40px;">
+  <p>6. [Event Binding, 2 hours]
+    Modify the above app and add a new button in the HTML template with a label as
+    “Display Profile”. The Html template will show only “Greetings &lt;username&gt;” and no
+    profile image. Create a click event on the button with function name as “displayProfile()”.
+    Display the profile image when the user clicks on the “Display Profile” button.</p>
+
+<div class="main">
+    <h2>Hello <span>World!</span></h2>
+    <h1><strong>Greetings, <span>{{username}}!</span></strong></h1>
+    <button (click)="displayProfile()"><strong>@if (isVisible) {Hide} @else {Display} profile</strong></button>
+    <div *ngIf="this.isVisible" class="image">
+        <img [ngSrc]="profileImg" [alt]="profileAltText" width="300" height="400" />
+    </div>
+</div>
+
+</div>

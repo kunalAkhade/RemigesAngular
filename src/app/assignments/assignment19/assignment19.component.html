@@ -1,0 +1,14 @@
+<div style="padding: 40px;">
+  <p>19. [&#64;Input decorator, 6 hours]
+    Create an angular app to pass the data from parent component to “child” component.
+    Considering the above assignment's JSON data structure, display the book&#39;s details by
+    passing the value from the app component to a newly created child component using
+    &#64;Input decorator.</p>
+
+<div class="book-container">
+    <div *ngFor="let book of listOfBooks ; index as i">
+        <app-book-template [title]="book.title" [description]="book.description" [price]="book.price"></app-book-template>
+    </div>
+</div>
+
+</div>

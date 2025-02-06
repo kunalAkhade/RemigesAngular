@@ -1,0 +1,60 @@
+.main{
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  padding-block: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-block: 15px ;
+  overflow-y: auto;
+  gap: 40px;
+  z-index: 1;
+
+}
+
+.main a {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(21, 44, 148);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main a:hover {
+   color: rgb(46, 178, 211);
+}
+
+
+
+/* Style for the scrollbar track (background of the scrollbar) */
+::-webkit-scrollbar {
+  width: 12px; /* Set width for vertical scrollbar */
+  height: 12px; /* Set height for horizontal scrollbar */
+}
+
+/* Style for the scrollbar track (the area where the thumb moves) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey background for track */
+  border-radius: 10px; /* Rounded corners for track */
+}
+
+/* Style for the scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #3c74dd; /* Grey thumb */
+  border-radius: 10px; /* Rounded corners for thumb */
+  border: 3px solid #f1f1f1; /* Add a border to create some contrast */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #1948a0; /* Darker grey when hovered */
+}
+
+/* Optional: Style for the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Same color as the track */
+}

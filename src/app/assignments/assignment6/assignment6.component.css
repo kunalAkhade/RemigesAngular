@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 0.1em;
+    letter-spacing: -1.5px;
+    font-size: 40px !important;
+    flex-direction: column;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadein {
+    from {
+        padding-top: 4rem;
+        opacity: 0;
+    }
+    to {
+        padding-top: 0;
+        opacity: 1;
+    }
+    
+}
+
+h1 {
+    font-size: 75px;
+}
+
+@keyframes anim {
+    from {
+        margin-top: -2rem;
+        height: auto;
+        width: 0;
+    }
+
+    to {
+        margin-top: 0;
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+span {
+    color: #00BDF2;
+}
+
+.image {
+    margin: 0.5rem;
+}
+
+img {
+    border-radius: 50%;
+    height: auto;
+    width: 0;
+    object-fit: cover;
+    animation-name: anim;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: white;
+    color: #00BDF2;
+    box-shadow: 0;
+    border: 1px solid #00BDF2;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-family: "Figtree", sans-serif;
+    font-size: 15px;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #00BDF2;
+    color: #fff;
+}

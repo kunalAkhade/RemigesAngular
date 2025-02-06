@@ -1,0 +1,16 @@
+.Views img {
+  opacity: 0.5;
+}
+
+.Views:hover p {
+  color: black;
+  font-weight: bold;
+}
+
+.Views:hover img {
+  opacity: 1;
+}
+
+.select{
+  color: black;
+}

@@ -1,0 +1,12 @@
+a{
+  color: white;
+}
+
+.Views{
+  color: gray;
+}
+
+.Views:hover{
+  color: black;
+  cursor: pointer;
+}

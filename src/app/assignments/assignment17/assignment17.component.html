@@ -1,0 +1,59 @@
+<div style="padding: 40px;">
+  <p>17. [Directives ngIf &amp; ngSwitch, 6 hours]
+    Extend the above app to add two components, one for ngIf and another for ngSwitch. (i)
+    Create a component named “DirectiveDemoIf”. The component should accept a number
+    input field to accept user input and a button “Find”. Clicking on the “Find” button should
+    show if the entered number is even or odd using “ngIf”. (ii) Create a component named
+    “DirectiveDemoSwitch” to demo the same functionality using “ngSwitch” instead of “ngIf”.</p>
+
+<div class="switch">
+    <button class="btn" (click)="changeDirective()">
+        <h1>⇋</h1>
+    </button>
+</div>
+
+<div class="main">
+    <div [formGroup]="formProfile" class="form">
+        <div class="switch">
+            <h4 class="blue" *ngIf="directive == 'if'">ngIf</h4>
+            <h4 class="pink" *ngIf="directive == 'switch'">ngSwitch</h4>
+        </div>
+        <div class="input">
+            @let emptyN1 = formProfile.controls.n1.hasError('required') && formProfile.controls.n1.touched;
+            @let validN1 = formProfile.controls.n1.hasError('pattern') && formProfile.controls.n1.touched;
+            <label for="n1">Number
+            </label>
+            <input [ngClass]="{'invalid': validN1 || emptyN1}" id="n1" name="n1" formControlName="n1"
+                autocomplete="off">
+            <div class="error"><span *ngIf="validN1">Number should
+                    be a whole number</span><span *ngIf="emptyN1">Number cannot
+                    be empty</span>
+            </div>
+        </div>
+
+        <div class="success">
+            <div *ngIf="directive == 'if'">
+                <div *ngIf="submitted && formProfile.untouched">{{num1}} is
+                    <span *ngIf="num1 % 2 == 0">Even</span>
+                    <span *ngIf="num1 % 2 != 0">Odd</span>
+                </div>
+            </div>
+
+            @let res = num1 % 2;
+            <div *ngIf="directive == 'switch'">
+                <div *ngIf="submitted && formProfile.untouched">{{num1}} is
+                    <span [ngSwitch]="res">
+                        <span *ngSwitchCase="0">Even</span>
+                        <span *ngSwitchCase="1">Odd</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="reset" (click)="handleReset()"><strong>Reset</strong></button>
+            <button class="register" [disabled]="formProfile.invalid"
+                (click)="handleSubmit()"><strong>Find</strong></button>
+        </div>
+    </div>
+</div>
+</div>

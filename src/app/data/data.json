@@ -1,0 +1,82 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "123 Maple Street",
+    "city": "Springfield",
+    "state": "IL",
+    "totalOrder": 250.75
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "address": "456 Oak Avenue",
+    "city": "Denver",
+    "state": "CO",
+    "totalOrder": 489.99
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Johnson",
+    "address": "789 Pine Road",
+    "city": "Austin",
+    "state": "TX",
+    "totalOrder": 125.50
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "address": "321 Cedar Lane",
+    "city": "Seattle",
+    "state": "WA",
+    "totalOrder": 300.00
+  },
+  {
+    "firstName": "Chris",
+    "lastName": "Brown",
+    "address": "654 Walnut Street",
+    "city": "Miami",
+    "state": "FL",
+    "totalOrder": 150.20
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Wilson",
+    "address": "987 Birch Boulevard",
+    "city": "Boston",
+    "state": "MA",
+    "totalOrder": 275.35
+  },
+  {
+    "firstName": "David",
+    "lastName": "Miller",
+    "address": "159 Aspen Circle",
+    "city": "Phoenix",
+    "state": "AZ",
+    "totalOrder": 400.60
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Taylor",
+    "address": "753 Willow Drive",
+    "city": "San Diego",
+    "state": "CA",
+    "totalOrder": 320.00
+  },
+  {
+    "firstName": "James",
+    "lastName": "Anderson",
+    "address": "852 Elm Court",
+    "city": "Atlanta",
+    "state": "GA",
+    "totalOrder": 175.45
+  },
+  {
+    "firstName": "Olivia",
+    "lastName": "Martinez",
+    "address": "456 Hickory Lane",
+    "city": "Chicago",
+    "state": "IL",
+    "totalOrder": 500.00
+  }
+]

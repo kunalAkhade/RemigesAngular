@@ -1,0 +1,29 @@
+<div class="container-fluid mt-5" style="min-height: 100%; overflow-y: auto; margin-block: 40px;">
+  <div class="row">
+    <div [routerLink]="['/assign24/details']" [queryParams]="{ lastName: customer.lastName, firstName: customer.firstName, address:customer.address, city:customer.city, state:customer.state }" routerLinkActive="router-link-active"  *ngFor="let customer of data; let i = index" class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+      <!-- Card for each customer -->
+      <div class="card mb-2">
+        <div class="row g-0">
+          <!-- Customer Header -->
+          <div class="bg-primary px-2" style="height: 50px; display: flex; justify-content: start; align-items: center; color: white;">
+            {{ customer.firstName }} {{ customer.lastName }}
+          </div>
+
+          <!-- Customer Image -->
+          <div class="col-md-4">
+            <img src="user.webp" class="img-fluid rounded-start" alt="Customer Image">
+          </div>
+
+          <!-- Customer Details -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-title">{{ customer.city }}</p>
+              <p class="card-title">{{ customer.address }}</p>
+              <a href="#" class="card-text" style=" text-decoration: none;">View Orders</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="my-navbar">
+  <a class="mobile-view" routerLink="/sidebar"><b>>></b></a>
+  <img [src]="logo" height="30px" />
+  <div class="mynav-items">
+
+
+    <!-- <a routerLink="/home" routerLinkActive="active"><b>Home </b></a>
+
+    <a routerLink="/about" routerLinkActive="active"><b>About</b></a>
+
+    <a routerLink="/Form" routerLinkActive="active"><b>Form</b></a>
+
+    <a routerLink="/first" [queryParams]="{ name: 'kunal' }" routerLinkActive="active"><b>First</b></a>
+
+    <a routerLink="/second/2" routerLinkActive="active"><b>Second</b></a>
+
+    <a routerLink="/wiki" routerLinkActive="active"><b>Wiki</b></a> -->
+
+    <a (click)="onToggleSidebar()"><b>Assignments</b></a>
+    <a routerLink="/Form" routerLinkActive="active"><b>Form</b></a>
+    @if (url=="/assign10" || url=='/assign12') {
+    <a routerLink="/first" [queryParams]="{ name: 'kunal' }" routerLinkActive="active"><b>First</b></a>
+    <a routerLink="/second/2" routerLinkActive="active"><b>Second</b></a>
+    }
+
+
+
+  </div>
+  <div style="display: flex; width: 100%; justify-content: flex-end; ">
+    <img style="border-radius: 100%; border: 1px solid black; padding: 1px;" [src]="user" height="40px"
+      [alt]="altComment" />
+  </div>
+
+
+</div>

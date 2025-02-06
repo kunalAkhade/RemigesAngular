@@ -1,0 +1,16 @@
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    margin-top: 0;
+}
+
+
+.home-container{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,0 +1,18 @@
+.wiki-main{
+  height: 80vh;
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.wiki-content{
+  height: 90%;
+  text-overflow: ellipsis;
+  overflow: auto;
+  padding-block: 1%;
+  text-align: justify;
+  padding-inline: 1%;
+}
+
+
+
+

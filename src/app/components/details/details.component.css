@@ -1,0 +1,17 @@
+.options{
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.options:hover{
+  color: black;
+  opacity: 1;
+}
+
+
+p{
+  font-family: sans-serif;
+  font-weight: 400;
+}

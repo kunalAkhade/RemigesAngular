@@ -1,0 +1,31 @@
+
+<div style="padding: 40px;">
+  <p>Create an Angular app to demonstrate predefined pipes available within
+    CommonModule by defining required class properties and default values.
+    UpperCasePipe, LowerCasePipe, CurrencyPipe, DecimalPipe, PercentPipe, DatePipe
+    etc.</p>
+
+  <div style="text-align:center; padding-bottom:89px">
+    <h1>Angular Predefined Pipes Demo</h1>
+    <div>
+      <h3>Original Data</h3>
+      <p>Text: {{ sampleText }}</p>
+      <p>Currency Value: {{ currencyValue }}</p>
+      <p>Decimal Value: {{ decimalValue }}</p>
+      <p>Percentage Value: {{ percentValue }}</p>
+      <p>Date: {{ currentDate }}</p>
+    </div>
+
+    <div>
+      <h3>Pipes Applied</h3>
+      <p><strong>UpperCasePipe:</strong> {{ sampleText | uppercase }}</p>
+      <p><strong>LowerCasePipe:</strong> {{ sampleText | lowercase }}</p>
+      <p><strong>CurrencyPipe:</strong> {{ currencyValue | currency:'USD': 'symbol' }}</p>
+      <p><strong>DecimalPipe:</strong> {{ decimalValue | number:'1.2-2' }}</p>
+      <p><strong>PercentPipe:</strong> {{ percentValue | percent:'2.1-1' }}</p>
+      <p><strong>DatePipe:</strong> {{ currentDate | date:'fullDate' }}</p>
+      <p><strong>DatePipe (Custom Format):</strong> {{ currentDate | date:'MMM d, y, h:mm:ss a' }}</p>
+    </div>
+  </div>
+</div>
+

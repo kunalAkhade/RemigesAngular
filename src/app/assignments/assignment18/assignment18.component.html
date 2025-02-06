@@ -1,0 +1,21 @@
+
+<div style="padding: 40px;">
+  <p>18. [Directives ngFor, 4 hours]
+
+    Extend the above app and create a new component named “DirectiveDemoFor”. Create
+    a book JSON array of objects as below in class “book.ts”
+    Using “ngFor”, display the book details in the form of cards using the external HTML
+    template.</p>
+    <div class="book-cards-container">
+      <div *ngFor="let book of bookList" class="book-card">
+        <h2 class="book-title">{{ book.title }}</h2>
+        <h4 class="book-author">{{ book.author }}</h4>
+        <p class="book-genre"><strong>Genre:</strong> {{ book.genre }}</p>
+        <p class="book-publication-date"><strong>Published:</strong> {{ book.publicationDate }}</p>
+        <p class="book-description">{{ book.description }}</p>
+        <p class="book-price"><strong>Price:</strong> ${{ book.price }}</p>
+      </div>
+    </div>
+</div>
+
+

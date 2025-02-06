@@ -1,0 +1,25 @@
+<div style="display: flex; flex-direction: column; margin-block: 50px; padding: 20px;">
+  <div style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(219, 219, 219);">
+    <p></p>
+    <p><b>First Name</b></p>
+    <p><b>Last Name</b></p>
+    <p><b>Address</b></p>
+    <p><b>City</b></p>
+    <p><b>State</b></p>
+    <p><b>Total Orders</b></p>
+    <p></p>
+  </div>
+  <div class="customer-list" style=" border-bottom: 1px solid rgb(219, 219, 219);"
+    *ngFor="let customer of customers; let i = index; " [ngClass]="{'odd-bg': i % 2 === 0}">
+    <div style="display: flex; padding-block: 10px;  justify-content: space-around; align-items: center; ">
+      <p><img src="user.webp" style="width: 100px; height: 100px;" /></p>
+      <p style="color: rgb(13, 110, 253);">{{ customer.firstName }}</p>
+      <p>{{ customer.lastName }}</p>
+      <p>{{ customer.address }}</p>
+      <p>{{ customer.city }}</p>
+      <p>{{ customer.state }}</p>
+      <p>{{ customer.totalOrder | currency }}</p>
+      <p><a href="">View Orders</a></p>
+    </div>
+  </div>
+</div>

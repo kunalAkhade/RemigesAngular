@@ -1,0 +1,119 @@
+/* Overall container styling */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100%;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+/* Form styling */
+.form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Label and input field styling */
+.input {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error handling and validation */
+.error {
+  color: #d9534f;
+  font-size: 14px;
+}
+
+.invalid {
+  border-color: #d9534f;
+}
+
+.success {
+  font-size: 16px;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.register {
+  background-color: #007bff;
+  color: white;
+}
+
+button.register:hover {
+  background-color: #0056b3;
+}
+
+button.reset {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+button.reset:hover {
+  background-color: #e6e6e6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  label, input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

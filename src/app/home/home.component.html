@@ -1,0 +1,12 @@
+<div class="home-container">
+
+
+@for(message of messages;track message){
+    <div>
+        {{message}}
+    </div>
+}
+<button (click)="change()">Click me 3 times to broadcast changes</button>
+
+</div>
+

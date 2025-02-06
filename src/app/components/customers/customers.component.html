@@ -1,0 +1,33 @@
+<div style="padding-inline: 30px; padding-block: 20px;">
+  <div style="display: flex; margin-bottom: 40px;">
+    <img src="user.webp" width="45px" height="100%" />
+    <h2 style="margin: 0; padding: 0; color:rgb(39, 37, 37)">Customers</h2>
+  </div>
+  <div style="display: flex; gap:30px; margin-left: 20px;">
+    <div (click)="onclick(1)" class="Views" routerLink="cards" style="display: flex; gap: 4px; "> <img [ngClass]="selected == 1? 'select':''"  src="dashboard.png"
+        height="20px" />
+      <p [ngClass]="selected == 1? 'select':''" >Card View</p>
+    </div>
+    <div  (click)="onclick(2)" class="Views" routerLink="list" style="display: flex; gap: 4px; "> <img [ngClass]="selected == 2? 'select':''"  src="view-list.png"
+        height="20px" />
+      <p [ngClass]="selected == 2? 'select':''" >List View</p>
+    </div>
+    <div  (click)="onclick(3)" class="Views" routerLink="map" style="display: flex; gap: 4px; "> <img [ngClass]="selected == 3? 'select':''"  src="location.png" height="20px" />
+      <p [ngClass]="selected == 3? 'select':''" >Map View</p>
+    </div>
+    <div class="Views" style="display: flex; gap: 4px; "> <img src="plus.png" height="20px" />
+      <p>Add Customer</p>
+    </div>
+    <div style="position: absolute; right: 70px;">
+      <p style="margin-bottom: 0;">Filter:</p>
+      <input type="text"
+        style="width: 300px; height: 40px;  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border: 1px solid rgb(228, 228, 228);">
+
+    </div>
+  </div>
+  <div style="width: 100%; padding: 10px;">
+    <router-outlet></router-outlet>
+
+  </div>
+
+</div>

@@ -1,0 +1,45 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 0.1em;
+    letter-spacing: -1.5px;
+    font-size: 40px !important;
+    flex-direction: column;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadein {
+    from {
+        padding-top: 4rem;
+        opacity: 0;
+    }
+    to {
+        padding-top: 0;
+        opacity: 1;
+    }
+    
+}
+
+h1 {
+    font-size: 75px;
+}
+
+span {
+    color: #00BDF2;
+}
+
+.image {
+    margin: 0.5rem;
+}
+
+img {
+    border-radius: 50%;
+    height: auto;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}

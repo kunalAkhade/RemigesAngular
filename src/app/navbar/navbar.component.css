@@ -1,0 +1,49 @@
+.my-navbar {
+  height: 10vh;
+  padding-inline: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  background-color: white;
+
+
+}
+
+b {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #5267c4;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.mynav-items {
+  display: flex;
+  gap: 30px;
+}
+
+.mobile-view{
+  display: none;
+}
+
+@media screen and (max-width:700px) {
+
+
+  .mobile-view {
+    display: inline;
+  }
+
+  img,.mynav-items{
+    display: none;
+  }
+
+
+
+}

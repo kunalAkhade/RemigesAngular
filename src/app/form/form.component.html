@@ -1,0 +1,88 @@
+<div class="app-container">
+
+  <div class="app-main">
+
+    <div class="form-box">
+
+      <div class="form">
+        <div class="form-row-1">
+          <div class="form-col-1">
+            Username:
+          </div>
+          <div class="form-col-2">
+            <div style="display: flex; flex-direction: column; width: 100%;">
+              <input (blur)="onLeave($event)" type="text" [value]="this.form.username" class="username-input"
+                (input)="getMobileNumber($event)" />
+              <p style="color: red;text-align: right;">{{errors.username}}</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-row-1">
+          <div class="form-col-1">
+            Password:
+          </div>
+          <div class="form-col-2">
+            <div style="display: flex; flex-direction: column; width: 100%;">
+            <input (blur)="onLeave($event)" type="password" [value]="this.form.password" class="password-input"
+              (input)="getMobileNumber($event)" />
+              <p>{{errors.password}}</p>
+              </div>
+
+          </div>
+
+        </div>
+
+        <div class="form-row-1">
+          <div class="form-col-1">
+            Email:
+          </div>
+          <div class="form-col-2">
+            <div style="display: flex; flex-direction: column; width: 100%;">
+            <input (blur)="onLeave($event)" type="text" class="email-input" [value]="this.form.email"
+              (input)="getMobileNumber($event)" />
+            <p>{{errors.email}}</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-row-1">
+          <div class="form-col-1">
+            Mobile Number:
+          </div>
+          <div class="form-col-2">
+            <div style="display: flex; flex-direction: column; width: 100%;">
+            <input (blur)="onLeave($event)" type="text" class="mobile-input" [value]="this.form.mobile"
+              (input)="getMobileNumber($event)" />
+            <p>{{errors.mobile}}</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="form-row-1">
+          <div class="form-col-1">
+          </div>
+          <div class="form-col-2">
+            <button (click)="onSubmit()">Register</button>
+            <button (click)="onClear()">Reset</button>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+</div>

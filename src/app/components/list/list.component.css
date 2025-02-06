@@ -1,0 +1,18 @@
+p{
+  width: 100px;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+.odd-bg{
+  background-color: rgb(255, 243, 243);
+}
+
+
